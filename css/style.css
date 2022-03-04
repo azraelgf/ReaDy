@@ -973,7 +973,7 @@ textarea.input {
     width: 1.875rem;
     height: 1.125rem;
     cursor: pointer;
-    z-index: 5;
+    z-index: 7;
   }
   .icon-menu span, .icon-menu::before, .icon-menu::after {
     content: "";
@@ -1011,7 +1011,7 @@ textarea.input {
 }
 @media (max-width: 47.99875em) {
   .header {
-    background-position: 0 0;
+    background: url("../img/bg_header.jpg") 0 0 no-repeat;
   }
 }
 
@@ -1034,6 +1034,8 @@ textarea.input {
 }
 .top-header__column {
   flex: 0 1 50%;
+  position: relative;
+  z-index: 6;
 }
 .top-header__column:nth-child(2) {
   flex: 0 0 11.875rem;
@@ -1045,8 +1047,6 @@ textarea.input {
   .top-header__column:nth-child(2) {
     flex-basis: 6.25rem;
     padding-top: 0;
-    position: relative;
-    z-index: 5;
   }
   .top-header__column:nth-child(2) img {
     width: 100%;
@@ -1068,7 +1068,7 @@ textarea.input {
     right: 0;
     overflow: auto;
     background-color: #fff;
-    z-index: 2;
+    z-index: 6;
     padding: 104px 20px 30px 20px;
     color: #000;
     transition: all 0.4s;
@@ -2317,10 +2317,9 @@ textarea.input {
   }
 }
 .text-block__inner {
-  background: url("../img/text-block.jpg") 0 0 no-repeat;
+  background: url("../img/text-block.jpg") 0 0/cover no-repeat;
   padding: 2.8125rem 1.875rem;
   color: #fff;
-  background-size: cover;
 }
 @media (max-width: 29.99875em) {
   .text-block__inner {
